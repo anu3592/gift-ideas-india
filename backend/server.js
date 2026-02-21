@@ -27,7 +27,7 @@ mongoose
   .then(() => {
     console.log("✅ MongoDB connected!");
     app.listen(process.env.PORT || 5000, () =>
-      console.log(`🚀 GiftGenie server running on port ${process.env.PORT || 5000}`)
+      console.log(`🚀 GiftIdeasIndia server running on port ${process.env.PORT || 5000}`)
     );
   })
   .catch((err) => console.error("❌ MongoDB error:", err));

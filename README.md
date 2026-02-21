@@ -1,4 +1,4 @@
-# 🎁 GiftGenie — AI-Powered Gift Recommendation App
+# 🎁 GiftIdeasIndia — AI-Powered Gift Recommendation App
 
 > Tell us who you're gifting, the occasion, and budget — AI suggests perfect gifts and finds them live on Amazon & Flipkart!
 
