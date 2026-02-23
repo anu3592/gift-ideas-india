@@ -21,7 +21,6 @@ app.use("/api/gifts", giftLimiter, require("./routes/gift"));
 app.use("/api/history", require("./routes/history"));
 
 app.get("/", (req, res) => res.json({ message: "GiftGenie API is running! 🎁" }));
-
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
