@@ -62,7 +62,6 @@ export default function Home() {
         budget: Number(form.budget),
         age: form.age ? Number(form.age) : null,
       });
-
       // Pass results to Results page via navigation state
       navigate('/results', { state: res.data });
     } catch (err) {
