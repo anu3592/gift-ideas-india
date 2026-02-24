@@ -66,7 +66,8 @@ export default function Home() {
       // Pass results to Results page via navigation state
       navigate('/results', { state: res.data });
     } catch (err) {
-      setError(err.response?.data?.error || 'Something went wrong. Please try again!');
+      const errorMsg = err.response?.data?.error || err.message || 'Something went wrong. Please try again!';
+  setError(typeof errorMsg === 'string' ? errorMsg : 'Something went wrong. Please try again!');
     }
     setLoading(false);
   };
