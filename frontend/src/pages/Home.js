@@ -57,7 +57,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const res = await axios.post('/api/gifts', {
+      const res = await axios.post('https://gift-tracker-o5eo.onrender.com/api/gifts', {
         ...form,
         budget: Number(form.budget),
         age: form.age ? Number(form.age) : null,
