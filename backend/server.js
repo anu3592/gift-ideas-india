@@ -7,7 +7,7 @@ require("dotenv").config();
 const app = express();
 
 app.set("trust proxy", 1);
-app.use(cors({ origin: "https://gift-tracker-india.vercel.app" }));
+app.use(cors({ origin: "https://gift-ideas-india1-by1f.vercel.app/" }));
 app.use(express.json());
 
 // Rate limit gift generation (AI + API calls are expensive)
